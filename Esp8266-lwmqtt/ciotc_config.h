@@ -15,14 +15,14 @@
 // This file contains your configuration used to connect to Cloud IoT Core
 
 // WIFI
-const char* ssid = "SSID2";
-const char* password = "Tres132!";
+const char* ssid = "wifiSSID";
+const char* password = "yourPasswordWIFI!";
 
 // Cloud iot details.
-const char* project_id = "project-iot-esp8266";
-const char* location = "asia-east1";
-const char* registry_id = "ESP8266-registry";
-const char* device_id = "arduino-1";
+const char* project_id = "yourProjectID";
+const char* location = "location-your-project";
+const char* registry_id = "registered-registry";
+const char* device_id = "device-name";
 
 // Configuration for NTP
 const char* ntp_primary = "time.google.com";
@@ -37,9 +37,8 @@ const char* ntp_secondary = "pool.ntp.org";
 // it's smaller add "00:" to the start. If it's too big or too small something
 // is probably wrong with your key.
 const unsigned char private_key[] = {
-  0x05,0xAE,0x71,0x66,0x56,0x8B,0x1D,0xF3,0xEC,0x84,0xB5,0x24,0xFD,0x7C,0x53,
-0xF1,0x3F,0xF6,0xD8,0x6C,0xD6,0x0D,0xAA,0x42,0x3A,0x9C,0xA0,0xA8,0x3B,0x3B,
-0xD8,0x30};
+  //fill with your hex format of private key
+};
 
 // Time (seconds) to expire token += 20 minutes for drift
 const int jwt_exp_secs = 3600; // Maximum 24H (3600*24)
